@@ -1,6 +1,6 @@
-FROM debian:jessie
+FROM sewatech/openjdk7
 
-RUN apt-get update && apt-get install -y curl openjdk-7-jdk && \
+RUN apt-get update && apt-get install -y curl && \
     curl -O http://download.jboss.org/wildfly/8.1.0.Final/wildfly-8.1.0.Final.tar.gz && \
     tar -zxvf wildfly-8.1.0.Final.tar.gz -C /opt/ && \
     rm /wildfly-8.1.0.Final.tar.gz && rm -r /opt/wildfly-8.1.0.Final/welcome-content && \
