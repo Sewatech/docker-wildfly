@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y curl && \
 
 COPY html /opt/wildfly-$VERSION/welcome-content
 COPY standalone-ha.xml /opt/wildfly-$VERSION/standalone/configuration/standalone-ha.xml
+COPY info.war /opt/wildfly-$VERSION/standalone/deployments/
 
 EXPOSE 8080 8009 9990
 
