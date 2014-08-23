@@ -407,15 +407,12 @@
         <interface name="public">
             <nic name="eth0"/>
         </interface>
-        <interface name="all">
-            <any-address/>
-        </interface>
         <interface name="local">
             <loopback/>
         </interface>
     </interfaces>
 
-    <socket-binding-group name="standard-sockets" default-interface="all" port-offset="${jboss.socket.binding.port-offset:0}">
+    <socket-binding-group name="standard-sockets" default-interface="local" port-offset="${jboss.socket.binding.port-offset:0}">
         <socket-binding name="management-http" interface="public" port="${jboss.management.http.port:9990}"/>
         <socket-binding name="management-https" interface="local" port="${jboss.management.https.port:9993}"/>
         <socket-binding name="ajp" interface="public" port="${jboss.ajp.port:8009}"/>
