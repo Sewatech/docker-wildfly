@@ -1,21 +1,22 @@
 # Content
 
-* Debian Jessie
+* Busybox (ubuntu)
+* Oracle JRE 7
 * WildFly 8.1.0.Final
 
 # Build
 
-	docker build -t sewatech/wildfly .
+	docker build -t sewatech/wildfly:busybox .
 
 # Run
 
 If you want direct access to the applications :
 
-	docker run -p 8080:8080 -p 9990:9990 -d sewatech/wildfly
+	docker run -p 8080:8080 -p 9990:9990 -d sewatech/wildfly:busybox
 
 If you want to access to the applications via a proxy :
 
-	docker run -p 9990:9990 -d sewatech/wildfly
+	docker run -p 9990:9990 -d sewatech/wildfly:busybox
 
 # Connect
 
@@ -27,4 +28,4 @@ For management :
 
 	http://localhost:9990/
 
-with alexis:hassler
+with alexis:hassler as credentials
