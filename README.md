@@ -1,7 +1,7 @@
 # Content
 
 * Debian Jessie
-* WildFly 8.2.0.Final
+* WildFly 9.0.0.Beta1
 
 # Build
 
