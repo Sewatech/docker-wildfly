@@ -1,7 +1,7 @@
 # Content
 
 * Debian Jessie
-* WildFly 9.0.0.Beta1
+* WildFly 9.0.2
 
 # Build
 
@@ -9,7 +9,7 @@
 
 # Run
 
-If you want direct access to the applications :
+If you want a direct access to the applications :
 
 	docker run -p 8080:8080 -p 9990:9990 -d sewatech/wildfly
 
@@ -27,4 +27,4 @@ For management :
 
 	http://localhost:9990/
 
-with alexis:hassler
+with credentials alexis:hassler
